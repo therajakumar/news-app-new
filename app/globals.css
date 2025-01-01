@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 34 40% 97%;
+    --foreground: 0 0% 16%;
+    
+    --card: 34 40% 97%;
+    --card-foreground: 0 0% 16%;
+ 
+    --popover: 34 40% 97%;
+    --popover-foreground: 0 0% 16%;
+ 
+    --primary: 11 46% 52%;
+    --primary-foreground: 34 40% 97%;
+ 
+    --secondary: 0 0% 92%;
+    --secondary-foreground: 0 0% 16%;
+ 
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 45%;
+ 
+    --accent: 0 0% 92%;
+    --accent-foreground: 0 0% 16%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 34 40% 97%;
+
+    --border: 0 0% 92%;
+    --input: 0 0% 92%;
+    --ring: 11 46% 52%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 0 0% 16%;
+    --foreground: 34 40% 97%;
+ 
+    --card: 0 0% 16%;
+    --card-foreground: 34 40% 97%;
+ 
+    --popover: 0 0% 16%;
+    --popover-foreground: 34 40% 97%;
+ 
+    --primary: 11 46% 52%;
+    --primary-foreground: 34 40% 97%;
+ 
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 34 40% 97%;
+ 
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
+ 
+    --accent: 0 0% 20%;
+    --accent-foreground: 34 40% 97%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 34 40% 97%;
+ 
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 11 46% 52%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
